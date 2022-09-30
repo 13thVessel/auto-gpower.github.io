@@ -25,7 +25,7 @@ h3 {
 
 h1,h2,h4,h5,p {  
   color: white;
-  text-shadow: 3px 3px 3px #000000;
+  text-shadow: 3px 3px 3px #000;
   margin-bottom: 0;
 }
 
@@ -559,7 +559,7 @@ section{
 }
 
 .info-cont{
-  padding: 40px 30px;
+  padding: 40px 0;
 }
 
 .info-cont:nth-child(1){
@@ -570,15 +570,10 @@ section{
 
 .info-cont:nth-child(2){
   flex: 60%;
-  padding:0;
-  margin-left: 80px;
+  margin-left: 60px;
   width: 100% !important;
   height: 100% !important;
 }
-
-/* .info-cont p{
-  margin: auto auto 30px 10px;
-} */
 
 .info-cont h2,
 .info-cont h1{
@@ -586,15 +581,16 @@ section{
   flex-direction: row;
   white-space: nowrap;
   margin:auto auto 30px 15px;
+  line-height: 55px;
 }
 
 .info-cont a{
   font-size: 35px;
   width: 40px;
   height: 40px;
-  /* margin:auto auto 30px 10px; */
+  margin:auto auto 30px 10px;
   border-radius: 25px;
-  line-height: 40px;
+  line-height: 45px;
   text-align: center;
   color:white !important;
   text-decoration: none;
@@ -781,10 +777,6 @@ section.services{
 
 @media only screen and (max-width:1310px) {
 
-  .contact-wrap{
-    width: 100vw;
-  }
-
   .info-cont:nth-child(1){
     width: 70vh !important;
 }
@@ -824,13 +816,15 @@ section.services{
 
   #carimg{width: 80%;}
 
-  .reveal.active{
-    flex: 1;
-  }
-
   .contact-wrap{
     flex-wrap: nowrap;
     width: 100vw;
+  }
+
+  .info-cont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .info-cont:nth-child(1){
@@ -961,11 +955,6 @@ section.services{
 
   .info-cont:nth-child(1){
     width: 90vh !important;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 0;
   }
 
   .info-cont:nth-child(2){
@@ -1040,6 +1029,10 @@ section.services{
 
   #carimg{width: 100%;}
 
+  .info-cont{
+    padding: 25px 0;
+  }
+
   .info-cont:nth-child(1){
     width: 90vh !important;
     flex-direction: column;
@@ -1064,7 +1057,7 @@ section.services{
   }
 
   section.third{
-    min-height: 1050px;
+    min-height: 1200px;
   }
 
   .swiper-3d, 
@@ -1095,10 +1088,6 @@ section.services{
   #services-cont{
     flex-direction: column;
   }
-
-  /* .reveal.active{
-    bottom: 150px;
-  } */
 
   .info-cont a,
   .info-cont h2{
@@ -1174,8 +1163,6 @@ section.services{
     margin: 0;
   }
 
-  section.third{min-height: 1050px;}
-
   .info-cont a, .info-cont em{font-size: 20px;}
 
   .services img{width: 140%;}
@@ -1215,8 +1202,6 @@ section.services{
   .info-cont a,
   .info-cont h2{font-size: 18px;}
 
-  section.third{min-height: 1050px;}
-
   .info-cont a,
   .info-cont em{font-size: 17px;}
 
@@ -1254,8 +1239,6 @@ section.services{
   section.second {min-height: 750px;}
 
   #services-cont h2{font-size: 19px;}
-
-  /* .reveal.active{bottom: 110px;} */
 
   #carimg{width: 100%;}
 
