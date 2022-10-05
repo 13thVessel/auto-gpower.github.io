@@ -829,7 +829,7 @@ section.services{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: baseline;
+    align-items: flex-start;
 }
 
   .info-cont:nth-child(2){
