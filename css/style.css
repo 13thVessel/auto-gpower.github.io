@@ -552,7 +552,7 @@ section{
 }
 
 .contact-wrap{
-  width:150vh;
+  width:150vw;
   height:auto;
   overflow:hidden;
   display:flex;
@@ -581,7 +581,6 @@ section{
 .info-cont h1{
   display: flex;
   flex-direction: row;
-  white-space: nowrap;
   line-height: 55px;
   margin: 10px;
 }
@@ -789,7 +788,7 @@ section.services{
 @media only screen and (max-width:1310px) {
 
   .info-cont:nth-child(1){
-    width: 70vh !important;
+    width: 70vw !important;
 }
 
   .info-cont:nth-child(2){
@@ -1022,7 +1021,6 @@ section.services{
   }
 
   .info-cont:nth-child(1){
-    width: 90vh !important;
     flex-direction: column;
     flex-wrap: nowrap;
     margin-left: 20px;
@@ -1138,7 +1136,6 @@ section.services{
   section.first{min-height: 600px;}
 
   .info-cont:nth-child(1){
-    width: 90vh !important;
     flex-direction: column;
     flex-wrap: nowrap;
     margin-left: 0;
@@ -1173,7 +1170,7 @@ section.services{
   #services-cont h2{font-size: 21px;}
 
   .info-cont:nth-child(1){
-    width: 90vh !important;
+    width: 100vw;
     flex-direction: column;
     flex-wrap: nowrap;
     margin-left: 0;
