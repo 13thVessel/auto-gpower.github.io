@@ -287,9 +287,7 @@ section{
   height: 100px;
 }
 
-.wave3 .shape-fill {
-  fill: #272727;
-}
+.wave3 .shape-fill {fill: #272727;}
 
 #home-carousel{
   width: 100vw;
@@ -347,19 +345,16 @@ section{
   outline: 1px solid black;
 }
 
-.carousel-button.prev{
-  left: 1rem !important;
-}
+.carousel-button.prev{left: 1rem !important;}
 
-.carousel-button.next{
-  right: 1rem !important;
-}
+.carousel-button.next{right: 1rem !important;}
 
 .reveal{
   position:relative;
   transform:translateX(-88%);
   opacity:0;
   transition: all 1.5s ease;
+  width: 65%;
 }
 
 .reveal.active{
