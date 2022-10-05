@@ -1,4 +1,4 @@
-<nav class="nav navbar-expand-sm fixed-bottom justify-content-center">
+<nav class="nav navbar-expand-sm justify-content-center">
     <a class="navbar-brand" style="color: rgb(105,105,105);" href="index.html"> © 2022 G Power</a>
 </nav>
 
@@ -20,5 +20,6 @@
 <script>
   $(window).on("load",function(){
     $(".loader-wrapper").fadeOut("slow");
+    $("body")[0].classList.remove("hide-overflow");
   });
 </script>

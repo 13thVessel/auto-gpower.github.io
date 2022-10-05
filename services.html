@@ -22,7 +22,7 @@
     </script>
 </head>
 
-<body>
+<body class="hide-overflow">
 
 <div id="header"></div>
 
@@ -157,7 +157,7 @@ function topFunction() {
   </script>
 
 <div id="footer">
-    <nav class="nav navbar-expand-sm fixed-bottom justify-content-center">
+    <nav class="nav navbar-expand-sm justify-content-center">
         <a class="navbar-brand" style="color: rgb(105,105,105);" href="index.html"> © 2022 G Power</a>
     </nav>
     
@@ -179,6 +179,7 @@ function topFunction() {
     <script>
       $(window).on("load",function(){
         $(".loader-wrapper").fadeOut("slow");
+        $("body")[0].classList.remove("hide-overflow");
       });
     </script>
 

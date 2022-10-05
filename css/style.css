@@ -29,9 +29,9 @@ h1,h2,h4,h5,p {
   margin-bottom: 0;
 }
 
-ul {
-  list-style-type: none;
-}
+ul {list-style-type: none;}
+
+.hide-overflow{overflow:hidden !important;}
 
 body::-webkit-scrollbar-track
 {
@@ -373,11 +373,12 @@ section{
 
 .loader-wrapper{
   width: 100%;
-  height: 100%;
+  height: 100vh;
   position:absolute;
   top: 0;
   left: 0;
   background-image: url("../images/Background.jpg");
+  z-index: 210;
 }
 
 .sec-container{
@@ -626,6 +627,10 @@ section.services{
 	filter: blur(0);
 }
 
+#navbar-items{
+	width:100%!important;
+}
+
 #service,
 #parts,
 #diagnosis,
@@ -699,6 +704,7 @@ section.services{
   right: 30px;
   z-index: 99;
   border: none;
+  box-shadow: 0 0 6px #272727;
   cursor: pointer;
   padding: 12px;
   border-radius: 100%;
@@ -782,8 +788,8 @@ section.services{
   }
 }
 
-#navbar-items{
-	width:100%!important;
+#footer{
+  background-color:#272727;
 }
 
 @media only screen and (max-width:1310px) {
