@@ -245,31 +245,22 @@
     goToTopBtn.addEventListener('click', goToTop);
 
     window.onscroll = function() {
-        
         scrollFunction()
-
     };
 
     function scrollFunction() {
-    
         if (document.body.scrollTop > 250 || document.documentElement.scrollTop > 250) {
-    
             goToTopBtn.style.display = "flex";
     
         } else {
-    
             goToTopBtn.style.display = "none";
-    
         }
-    
     }
 
     function goToTop() {
-    
         document.body.scrollTop = 0;
     
         document.documentElement.scrollTop = 0;
-    
     }
 
 </script>
@@ -277,9 +268,7 @@
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
 <script>
-
     AOS.init();
-
 </script>
 
 <div id="footer"></div>

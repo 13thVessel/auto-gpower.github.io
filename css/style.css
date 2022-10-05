@@ -582,14 +582,11 @@ section{
   display: flex;
   flex-direction: row;
   white-space: nowrap;
-  margin:auto auto 30px 15px;
   line-height: 55px;
 }
 
 .info-cont a{
   font-size: 35px;
-  width: 40px;
-  height: 40px;
   margin:auto auto 30px 10px;
   border-radius: 25px;
   line-height: 45px;
@@ -822,11 +819,12 @@ section.services{
   }
 
   .info-cont:nth-child(1){
-    width: 120vh !important;
+    width: 100vw !important;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: baseline;
 }
 
   .info-cont:nth-child(2){
