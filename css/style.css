@@ -207,6 +207,7 @@ section{
 .second{
   background: #fff;
   padding-top: 75px;
+  overflow-y: hidden;
 }
 
 .second h1,
@@ -364,9 +365,10 @@ section{
 
 .reveal.active{
   position:relative;
-  transform:translateX(-20%);
+  transform:translateX(0%);
   opacity:1;
   transition: all 1.5s ease;
+  width: 65%;
 }
 
 .loader-wrapper{
@@ -706,9 +708,11 @@ section.services{
 
 #services-cont{
   display: flex;
-  align-items: flex-start;
   flex-direction: column;
+  align-items: flex-start;
 }
+
+#services-cont h2{margin: 20px;}
 
 #services-cont .car-exh:hover,
 #services-cont em:hover{
@@ -724,7 +728,7 @@ section.services{
  }
 }
 
-#carimg{width: 80%;}
+#carimg{width: 100%;}
   
 #map {
   margin: 25px auto;
@@ -798,23 +802,13 @@ section.services{
 
 @media only screen and (max-width:1200px) {
   
-  .sec-container{
-    flex-direction: row;
-    flex: 1;
-  }
-
-  #services-cont h2{
-    margin: 10px;
-  }
+  .sec-container{flex-direction: row;}
 
   #services-cont{
-    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     flex: 1;
   }
-
-  #carimg{width: 80%;}
 
   .contact-wrap{
     flex-wrap: nowrap;
@@ -870,30 +864,26 @@ section.services{
 }
 
 @media only screen and (max-width:992px){
-  .first{
-    background-position: center;
+
+  .first{background-position: center;}
+
+  .sec-container{flex-direction: column-reverse;}
+
+  .reveal.active{width: 100%;}
+
+  #services-cont{
+    margin-top: 25px;
+    justify-content: center;
   }
 
-  .sec-container{
-    flex-direction: column-reverse;
-  }
+  #services-cont h2{margin: 12px;}
 
-  #services-cont h2{
-    margin: 10px;
-  }
+  .reveal{transform: translateX(-50%) !important;}
 
-  .reveal{
-    transform: translateX(-50%) !important;
-  }
-
-  .reveal.active{
-    transform: translateX(0%) !important;
-  }
+  .reveal.active{transform: translateX(0%) !important;}
 
   .info-cont a,
-  .info-cont h2{
-    font-size: 1.5rem;
-  }
+  .info-cont h2{font-size: 1.5rem;}
 
   .swiper{
     width: 320px;
@@ -901,18 +891,12 @@ section.services{
   }
 
   .info-left a,
-  .info-left h2{
-    font-size: 19.5px;
-  }
+  .info-left h2{font-size: 19.5px;}
 
-  .services img{
-    width: 140%;
-  }
+  .services img{width: 140%;}
 
   #parts-img,
-  #aircnd-img{
-    transform: translateX(-75px);
-  }
+  #aircnd-img{transform: translateX(-75px);}
 }
 
 @media only screen and (max-width:850px) {
@@ -1081,12 +1065,13 @@ section.services{
     min-height: 850px;
   }
 
-  #services-cont h2{
-    font-size: 24px;
-  }
-
   #services-cont{
     flex-direction: column;
+    margin-bottom: 40px;
+  }
+
+  #services-cont h2{
+    font-size: 24px;
   }
 
   .info-cont a,
@@ -1241,6 +1226,8 @@ section.services{
   #services-cont h2{font-size: 19px;}
 
   #carimg{width: 100%;}
+  
+  .reveal.active {transform: translateX(0%) !important;}
 
   .third h1{font-size: 22px;}
 
