@@ -556,8 +556,6 @@ section{
   height:auto;
   overflow:hidden;
   display:flex;
-  flex-wrap: wrap;
-  flex-direction: column;
 }
 
 .info-cont{
@@ -570,7 +568,11 @@ section{
   left:0;
 }
 
-.info-cont:nth-child(2){flex: 60%;}
+.info-cont:nth-child(2){
+  display: flex;
+  flex: 60%;
+  justify-content: center;
+}
 
 .info-cont h2,
 .info-cont h1{
@@ -800,6 +802,7 @@ section.services{
   }
 
   .contact-wrap{
+    flex-direction: column;
     flex-wrap: nowrap;
     width: 100vw;
   }
