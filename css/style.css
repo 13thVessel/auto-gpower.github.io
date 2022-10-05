@@ -566,11 +566,12 @@ section{
   flex: 40%;
   color: white !important;;
   left:0;
+  margin-left : 5%
 }
 
 .info-cont:nth-child(2){
   display: flex;
-  flex: 60%;
+  flex: 55%;
   justify-content: center;
 }
 
@@ -582,10 +583,13 @@ section{
   margin: 10px;
 }
 
-.info-cont a{
+.info-cont a,
+.info-cont p{
+  height: max-content;
+  margin: auto 0;
   font-size: 35px;
   border-radius: 25px;
-  text-align: center;
+  text-align: left;
   color:white !important;
   text-decoration: none;
   cursor: pointer;
@@ -820,6 +824,7 @@ section.services{
     flex-wrap: wrap;
     justify-content: center;
     align-items: flex-start;
+    margin-left: 0;
 }
 
   .info-cont:nth-child(2){
@@ -863,6 +868,9 @@ section.services{
 
   .reveal.active{width: 100%;}
 
+  .info-cont a,
+  .info-cont p{font-size: 22px;}
+
   #services-cont{
     margin-top: 25px;
     justify-content: center;
@@ -873,9 +881,6 @@ section.services{
   .reveal{transform: translateX(-50%) !important;}
 
   .reveal.active{transform: translateX(0%) !important;}
-
-  .info-cont a,
-  .info-cont h2{font-size: 1.5rem;}
 
   .swiper{
     width: 320px;
@@ -1017,10 +1022,6 @@ section.services{
     flex-direction: row;
     margin: 0;
   }
-
-  .info-cont a, .info-cont em{
-    font-size: 25px;
-  }
   
   h1,h2{
     font-size: 30px;
@@ -1060,11 +1061,6 @@ section.services{
     font-size: 24px;
   }
 
-  .info-cont a,
-  .info-cont h2{
-    font-size: 22px;
-  }
-
   .services img{
     width: 150%;
   }
@@ -1085,11 +1081,7 @@ section.services{
 }
 
 @media only screen and (max-width: 455px) {
-
   #carimg{width: 100%;}
-
-  .info-cont a,
-  .info-cont h2{font-size: 20px;}
 }
 
 @media screen and (max-height: 450px) {
@@ -1133,7 +1125,8 @@ section.services{
     margin: 0;
   }
 
-  .info-cont a, .info-cont em{font-size: 20px;}
+  .info-cont a,
+  .info-cont p{font-size: 18px;}
 
   .services img{width: 140%;}
 
@@ -1168,9 +1161,6 @@ section.services{
     flex-direction: row;
     margin: 0;
   }
-
-  .info-cont a,
-  .info-cont h2{font-size: 18px;}
 
   .info-cont a,
   .info-cont em{font-size: 17px;}
@@ -1215,9 +1205,6 @@ section.services{
   .reveal.active {transform: translateX(0%) !important;}
 
   .third h1{font-size: 22px;}
-
-  .info-cont a,
-  .info-cont h2{font-size: 15px;}
 
   .info-left a,
   .info-left h2{
