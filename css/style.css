@@ -837,13 +837,9 @@ section.services{
     display: flex;
   }
 
-  h1{
-    font-size: 35px;
-  }
+  h1{font-size: 35px;}
 
-  section.third{
-    min-height: 900px;
-  }
+  section.third{min-height: 900px;}
 
   .swiper{
     width: 500px;
@@ -851,18 +847,12 @@ section.services{
   }
 
   .swiper-3d, 
-  .swiper-3d.swiper-css-mode .swiper-wrapper {
-    perspective: 800px !important;
-  }
+  .swiper-3d.swiper-css-mode .swiper-wrapper {perspective: 800px !important;}
 
-  .info-left {
-    padding:30px 12px;
-  }
+  .info-left {padding:30px 12px;}
 
   .info-left a,
-  .info-left h2{
-    font-size: 25px;
-  }
+  .info-left h2{font-size: 25px;}
 }
 
 @media only screen and (max-width:992px){
@@ -903,74 +893,46 @@ section.services{
 
 @media only screen and (max-width:850px) {
 
-  #services-cont h2{
-    font-size: 24px;
-  }
+  #services-cont h2{font-size: 24px;}
 
-  .car-exh {
-    width: 52px;
-  }
+  .car-exh {width: 52px;}
 
 }
 
 @media only screen and (max-width:770px) {
 
-  section.first{
-    min-height: 690px;
-  }
+  section.first{min-height: 690px;}
 
-  #services-cont h2{
-    font-size: 22px;
-  }
+  #services-cont h2{font-size: 22px;}
 
-  .car-exh {
-    width: 50px;
-  }
+  .car-exh {width: 50px;}
 
-  .contact-wrap{
-    width: 100vw;
-  }
-
-  #info-map{
-    height:100%;
-  }
+  .contact-wrap{width: 100vw;}
 
   .info-cont:nth-child(2){
     justify-content: center;
     display: flex;
   }
 
-  .info-box {
-    flex-direction: column;
-  }
+  .info-box {flex-direction: column;}
 
   .info-left a,
-  .info-left h2{
-    font-size: 30px;
-  }
+  .info-left h2{font-size: 30px;}
 
   .swiper-3d, 
-  .swiper-3d.swiper-css-mode .swiper-wrapper {
-    perspective: 1500px !important;
-  }
+  .swiper-3d.swiper-css-mode .swiper-wrapper {perspective: 1500px !important;}
 
   .swiper{
     width: 550px;
     height: 320px;
   }
 
-  .services img{
-    width: 120%;
-  }
+  .services img{width: 120%;}
 
-  .services img:hover{
-    width: 145% !important; 
-  }
+  .services img:hover{width: 145% !important; }
 
   #parts-img,
-  #aircnd-img{
-    transform: translateX(-25px);
-  }
+  #aircnd-img{transform: translateX(-25px);}
 
 }
 

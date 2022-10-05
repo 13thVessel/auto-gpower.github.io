@@ -153,13 +153,12 @@ $(window).on("load",function(){
         $(".loader-wrapper").fadeOut("slow");
         $("body")[0].classList.remove("hide-overflow");
       });
-      
+
 var swiper = new Swiper(".mySwiper", {
     effect: "cards",
     slidesPerView: 1,
     spaceBetween: 5,
     loop: true,
-    mousewheel: true,
     keyboard: { enabled: true, },
     pagination: {
       el: ".swiper-pagination",
