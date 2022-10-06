@@ -1,9 +1,0 @@
-D:/xampp/htdocs
-
-// To push local code
-git add .
-git commit -m "text"
-git push origin main
-
-// To get remote code
-git pull origin main
