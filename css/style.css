@@ -490,7 +490,10 @@ section{
   font-size: 26px;
 }
 
-.info-left #home-smartphone{padding-right: 10px;} 
+.info-left #home-smartphone{
+  padding-right: 10px;
+  margin-left: 13px;
+} 
 
 .info-right{
   flex-basis: 55% ;
